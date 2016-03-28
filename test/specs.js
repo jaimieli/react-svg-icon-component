@@ -3,7 +3,7 @@
 const React = require('react');
 const assert = require('assert');
 const shallow = require('enzyme').shallow;
-const SvgIconComponent = require('../index');
+const SvgIconComponent = require('../src/index');
 
 describe('SvgComponent component', () => {
     let mockProps;

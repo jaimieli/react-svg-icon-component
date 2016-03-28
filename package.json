@@ -6,9 +6,10 @@
   "scripts": {
     "test": "mocha --compilers js:babel-register",
     "gitlint": "node_modules/.bin/dibslint --git --warnings",
-    "lint": "dibslint --root=."
+    "lint": "dibslint --root=.",
+    "build": "gulp build"
   },
-  "main": "index.jsx",
+  "main": "dist/index.js",
   "pre-commit": {
     "run": [
       "gitlint"
@@ -21,6 +22,8 @@
     "classnames": "^2.2.3",
     "dibslint": "^1.2.4",
     "enzyme": "^2.2.0",
+    "gulp": "^3.9.1",
+    "gulp-babel": "^6.1.2",
     "mocha": "^2.3.4",
     "pre-commit": "^1.1.2",
     "react-addons-test-utils": "^0.14.7"
